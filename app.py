@@ -63,10 +63,12 @@ def download(filename):
     # Serve the file from the static folder
     return send_from_directory('static', filename, as_attachment=True)
 
-if __name__ == '__main__':
+
+
+
+'''if __name__ == '__main__':
     # Create 'static' folder if it doesn't exist
-    static_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
-    os.makedirs(static_folder, exist_ok=True)
+    
 
 
     app.run(debug=True)
@@ -77,4 +79,4 @@ if __name__ == '__main__':
             if os.path.isfile(file_path):
                 os.remove(file_path)
         except Exception as e:
-            print(f"Error deleting file {file_path}: {e}")
+            print(f"Error deleting file {file_path}: {e}")'''
